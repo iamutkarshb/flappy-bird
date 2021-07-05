@@ -19,6 +19,8 @@ myenv\scripts\activate
 - ***Import*** *pygame*
 - ***Initialize*** *pygame*
 - Create ***display surface*** (*canvas*) to draw game images.
+    - It includes Display size
+    - and Frame per second at which the display will be updated for smooth function of game 
 - ***Game loop:*** *Contains game logic*
 - ***Quit game***
 
