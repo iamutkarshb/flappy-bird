@@ -1,5 +1,5 @@
 # Welcome to flappy-bird!
-Project ---->Working in progress
+Project ---->🚧WORK IN PROGRESS 🚧
 ### Project made while Learning game development with python
 
 - Description: A clone of the popular Flappy Bird game using Python
