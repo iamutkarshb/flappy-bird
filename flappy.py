@@ -1,4 +1,4 @@
-import pygame,sys
+import pygame,sys,random
 
 pygame.init()
 
@@ -7,8 +7,10 @@ def draw_base():
     screen.blit(base_surface,(base_x_pos+288,450))
 
 def create_pipe():
-    new_pipe =pipe_surface.get_rect(midtop =(350,256))
-    return new_pipe
+    random_pipe_pos = random.choice(pipe_height)
+    bottom_pipe =pipe_surface.get_rect(midtop =(350,random_pipe_pos))
+    top_pipe =pipe_surface.get_rect(midbottom =(350,random_pipe_pos-150))
+    return bottom_pipe, top_pipe
 
 def move_pipes(pipes):
     for pipe in pipes:
@@ -17,7 +19,11 @@ def move_pipes(pipes):
 
 def draw_pipes(pipes):
     for pipe in pipes:
-        screen.blit(pipe_surface,pipe)
+        if pipe.bottom >=512:    
+            screen.blit(pipe_surface,pipe)
+        else:
+            flip_pipe = pygame.transform.flip(pipe_surface,False,True)
+            screen.blit(flip_pipe,pipe)
 
 screen = pygame.display.set_mode((288,512))
 clock = pygame.time.Clock()
@@ -36,6 +42,7 @@ pipe_surface = pygame.image.load('assets\pipe-green.png').convert()
 pipe_list = []
 SPAWNPIPE = pygame.USEREVENT
 pygame.time.set_timer(SPAWNPIPE,1200)
+pipe_height = [200,300,400]
 
 while True:
     for event in pygame.event.get():
@@ -47,7 +54,7 @@ while True:
                 bird_movement = 0
                 bird_movement -= 6
         if event.type == SPAWNPIPE:
-            pipe_list.append(create_pipe())
+            pipe_list.extend(create_pipe())
 
 
     screen.blit(bg_surface,(0,0))
