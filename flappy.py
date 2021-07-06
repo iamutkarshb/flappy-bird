@@ -42,14 +42,31 @@ def bird_animation():
     new_bird_rect = new_bird.get_rect(center = (50, bird_rect.centery))
     return new_bird,new_bird_rect
 
+def score_display(game_state):
+    if game_state == 'current_game':
+        score_surface = game_font.render(str(int(score)),True,(255,255,255))
+        score_rect = score_surface.get_rect(center = (144,50))
+        screen.blit(score_surface,score_rect)
+    if game_state == 'game_over':
+        score_surface = game_font.render(f'Score:{int(score)}',True,(255,255,255))
+        score_rect = score_surface.get_rect(center = (144,50))
+        screen.blit(score_surface,score_rect)
+
+        high_score_surface = game_font.render(f'High Score:{int(high_score)}',True,(255,255,255))
+        high_score_rect = high_score_surface.get_rect(center = (144,425))
+        screen.blit(high_score_surface,high_score_rect)
+
+
 
 screen = pygame.display.set_mode((288,512))
 clock = pygame.time.Clock()
-
+game_font = pygame.font.Font('04B_19.ttf',40)
 
 gravity = 0.25
 bird_movement = 0
 game_active=True
+score = 0
+high_score = 0
 
 bg_surface =pygame.image.load("assets/background-day.png").convert()
 base_surface =pygame.image.load("assets/base.png").convert()
