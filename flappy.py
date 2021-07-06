@@ -2,6 +2,10 @@ import pygame,sys
 
 pygame.init()
 
+def draw_base():
+    screen.blit(base_surface,(base_x_pos,450))
+    screen.blit(base_surface,(base_x_pos+288,450))
+
 screen = pygame.display.set_mode((288,512))
 clock = pygame.time.Clock()
 bg_surface =pygame.image.load("assets/background-day.png").convert()
@@ -15,6 +19,9 @@ while True:
             sys.exit()
     screen.blit(bg_surface,(0,0))
     base_x_pos -=1
-    screen.blit(base_surface,(base_x_pos,450))
+    draw_base()
+    if base_x_pos<=-288:
+        base_x_pos=0
+
     pygame.display.update()
     clock.tick(120)
