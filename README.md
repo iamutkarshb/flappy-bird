@@ -1,5 +1,5 @@
 # Welcome to flappy-bird!
-Project ---->🚧WORK IN PROGRESS 🚧
+Project ---->
 ### Project made while Learning game development with python
 
 - Description: A clone of the popular Flappy Bird game using Python
@@ -30,4 +30,5 @@ graph TD
     Display Surface(canvas) --> Game Logic;
     Game Logic --> Quit Game;
 '''
-    
+
+### Project is completed customize it to your favorite playing style, like I did. All u need to do it change timeframe to increase speed difficulties. or you can change the soundboard attach to your liking.
