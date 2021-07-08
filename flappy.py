@@ -147,7 +147,6 @@ while True:
                 bird_index += 1
         else:
             bird_index = 0
-
         bird_surface, bird_rect = bird_animation()
 
     screen.blit(bg_surface, (0, 0))
