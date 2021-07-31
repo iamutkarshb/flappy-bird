@@ -13,6 +13,11 @@ cd [file location]
 myenv\scripts\activate
 ````
 
+**Note:**
+    Project is made according to my favorite play style. If you want to make your own custom game and initialize it to your custom play style. 
+    
+    Checkout the steps below.
+
 ![](https://i.imgur.com/6zM7JBq.png)
 
 Python is a very versatile modern programming language and in this course you will learn basic game development using a python library called pygame.  We will be creating a clone version of the very popular game called flappy bird that made a lot of money for  it's developer few years ago.
@@ -46,26 +51,22 @@ user Beautiful soup to parse and extract information
 convert to Pandas Dataframe
 
 1. **Environment Setup**
-    - We're going to scrape https://github.com/topics
+    - Create a ***Python file***. 
+    - ***Import*** *pygame*
+    - ***Initialize*** *pygame*
+    - Create ***display surface*** (*canvas*) to draw game images.
+        - It includes Display size
+        - and Frame per second at which the display will be updated for smooth function of game 
+    - ***Game loop:*** *Contains game logic*
+    - ***Quit game***
 
+    ```mermaid
+    graph TD
+        Initialize Pygame --> Display Surface(canvas);
+        Display Surface(canvas) --> Game Logic;
+        Game Logic --> Quit Game;
+    '''
 2. **Building Flappy Bird Game**
+this section will be added by 17:30 stay tuned till then, btw projet is still working, give it a go and see if you can crack the code on how to build this
 
-
-### Basic Pygame Setup
-- Create a ***Python file***. 
-- ***Import*** *pygame*
-- ***Initialize*** *pygame*
-- Create ***display surface*** (*canvas*) to draw game images.
-    - It includes Display size
-    - and Frame per second at which the display will be updated for smooth function of game 
-- ***Game loop:*** *Contains game logic*
-- ***Quit game***
-
-```mermaid
-graph TD
-    Initialize Pygame --> Display Surface(canvas);
-    Display Surface(canvas) --> Game Logic;
-    Game Logic --> Quit Game;
-'''
-
-### Project is completed customize it to your favorite playing style, like I did. All u need to do it change timeframe to increase speed difficulties. or you can change the soundboard attach to your liking.
+Project is completed customize it to your favorite playing style, like I did. All u need to do it change timeframe to increase speed difficulties. or you can change the soundboard attach to your liking.
