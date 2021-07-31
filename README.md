@@ -71,6 +71,19 @@ Add sound effect to increase interactive with the game.
     '''
 2. **Building Flappy Bird Game**
 
-this section will be added by 17:30 stay tuned till then, btw projet is still working, give it a go and see if you can crack the code on how to build this
+    1. We add game resources first, which include game images, sound, font used for game.
+        -  game images in assets folder, sound in sound folder, and fond is in main folder 04B_19.TTF 
+    2.  Basic Setup
+    3.  Framerate
+    4.  Animations
+    5.  Bird addition
+    6.  Obstacles addition
+    7.  Check collision
+    8.  Game End condition and Game Start conditions
+    9.  Rotating bird ( basically bird should face up when flying and face down when falling).
+    10.  Adding Sound effects
+    
+    -**Note:** check the commits to understand each points.
 
-Project is completed customize it to your favorite playing style, like I did. All u need to do it change timeframe to increase speed difficulties. or you can change the soundboard attach to your liking.
+Project can be completely customize to your favorite playing style. All u need to do it change timeframe to increase speed difficulties. or you can change the soundboard attach to your liking.
+
