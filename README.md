@@ -83,7 +83,7 @@ Add sound effect to increase interactive with the game.
     9.  Rotating bird ( basically bird should face up when flying and face down when falling).
     10.  Adding Sound effects
     
-    -**Note:** check the commits to understand each points.
+    - **Note:** check the commits to understand each points.
 
 Project can be completely customize to your favorite playing style. All u need to do it change timeframe to increase speed difficulties. or you can change the soundboard attach to your liking.
 
