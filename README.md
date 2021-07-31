@@ -11,9 +11,12 @@ Instructions to Run
 cd [file location]
 # Activating the Virtual Environment
 myenv\scripts\activate
+# To start the game
+python flappy.py
 ````
 
 **Note:**
+
     Project is made according to my favorite play style. If you want to make your own custom game and initialize it to your custom play style. 
     
     Checkout the steps below.
@@ -67,6 +70,7 @@ convert to Pandas Dataframe
         Game Logic --> Quit Game;
     '''
 2. **Building Flappy Bird Game**
+
 this section will be added by 17:30 stay tuned till then, btw projet is still working, give it a go and see if you can crack the code on how to build this
 
 Project is completed customize it to your favorite playing style, like I did. All u need to do it change timeframe to increase speed difficulties. or you can change the soundboard attach to your liking.
