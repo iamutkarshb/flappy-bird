@@ -1,11 +1,9 @@
-# Welcome to flappy-bird!
-Project ---->
-### Project made while Learning game development with python
-
+# Python Game Development Project
+Welcome to flappy-bird!
 - Description: A clone of the popular Flappy Bird game using Python
-- Language: Python, 
-- DB: 
-- Tags: Game development
+- Language: Python, PYGAME 
+- DB: Game Score is store on Local storage.
+- Tags: Game development, Python
 
 Instructions to Run
 ```bash
@@ -14,6 +12,45 @@ cd [file location]
 # Activating the Virtual Environment
 myenv\scripts\activate
 ````
+
+![](https://i.imgur.com/6zM7JBq.png)
+
+Python is a very versatile modern programming language and in this course you will learn basic game development using a python library called pygame.  We will be creating a clone version of the very popular game called flappy bird that made a lot of money for  it's developer few years ago.
+
+Creating a flappy bird clone teach you some very useful practical skills in game development that you can use to create your own games in future.
+
+Follow these steps to build a Game Development project using Python and its ecosystem of libraries:
+
+TODO (Intro):
+1. Create game surfaces and main display screen
+2. Create basic animation
+3. Check for events and how to trigger a response
+4. Add scoring to game
+5. Import images  onto their own surfaces and embed them in rectangles
+6. Position objects on game screen
+7. Spawn objects that are triggered by a timer
+8. Add sound effects to game
+9. Position objects on screen using coordinates
+
+![](https://i.imgur.com/6zM7JBq.png)
+
+For each topic we'll create a CSV file in the following format:
+Repo Name,Username,Stars,Repo URL
+three.js,mrdoob,69700,https://github.com/mrdoob/three.js
+libgdx,libgdx,18300,https://github.com/libgdx/libgdx
+Scrape the list of topics from Github
+
+Explain how you'll do it:
+use requests to download the page
+user Beautiful soup to parse and extract information
+convert to Pandas Dataframe
+
+1. **Environment Setup**
+    - We're going to scrape https://github.com/topics
+
+2. **Building Flappy Bird Game**
+
+
 ### Basic Pygame Setup
 - Create a ***Python file***. 
 - ***Import*** *pygame*
