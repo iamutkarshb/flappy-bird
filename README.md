@@ -21,7 +21,7 @@ Project is made according to my favorite play style. If you want to make your ow
 
 Checkout the steps below.
 
-![](https://i.imgur.com/6zM7JBq.png)
+![](img/flappybird.JPG)
 
 Python is a very versatile modern programming language and in this course you will learn basic game development using a python library called pygame.  We will be creating a clone version of the very popular game called flappy bird that made a lot of money for  it's developer few years ago.
 
@@ -40,18 +40,18 @@ TODO (Intro):
 8. Add sound effects to game
 9. Position objects on screen using coordinates
 
-![](https://i.imgur.com/6zM7JBq.png)
+-> For ex: in the above image: 
+- image 1: Collision 
+- image 2: Game Over
+- image 3: Score
 
-For each topic we'll create a CSV file in the following format:
-Repo Name,Username,Stars,Repo URL
-three.js,mrdoob,69700,https://github.com/mrdoob/three.js
-libgdx,libgdx,18300,https://github.com/libgdx/libgdx
-Scrape the list of topics from Github
+We use these surface in a loop to make interactive and amazing to play
 
 Explain how you'll do it:
-use requests to download the page
-user Beautiful soup to parse and extract information
-convert to Pandas Dataframe
+Use pygame to initialize a virtual environment to play game.
+In the virtual environment we create display surface, create different events and trigger response.
+Add game score, Detect collision, trigger game over.
+Add sound effect to increase interactive with the game.
 
 1. **Environment Setup**
     - Create a ***Python file***. 
