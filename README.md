@@ -17,9 +17,9 @@ python flappy.py
 
 **Note:**
 
-    Project is made according to my favorite play style. If you want to make your own custom game and initialize it to your custom play style. 
-    
-    Checkout the steps below.
+Project is made according to my favorite play style. If you want to make your own custom game and initialize it to your custom play style. 
+
+Checkout the steps below.
 
 ![](https://i.imgur.com/6zM7JBq.png)
 
